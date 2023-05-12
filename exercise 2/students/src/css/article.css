@@ -1,0 +1,12 @@
+.main .wrapper {
+    margin: auto;
+    width: 80%
+}
+
+.table .thead-dark {
+background-color: #fad980;
+}
+
+table, th, td {
+  border: 2px solid #000000;
+}
