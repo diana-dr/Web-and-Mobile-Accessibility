@@ -4,17 +4,17 @@ html {
 
 body,
 html {
-    height: 100%
+    height: 100%;
 }
 
 body a,
 body div,
 body p {
-    color: #dfdfdf
+    color: #000000;
 }
 
 body a:hover {
-    color: #cdcdcd
+    color: #e31c3d;
 }
 
 .title {

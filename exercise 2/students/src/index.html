@@ -12,7 +12,7 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
-    <div class="container-fluid d-none d-lg-block my-4 header">
+    <div class="container-fluid d-none d-lg-block my-4 header" role="header">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-8 media">
@@ -26,16 +26,18 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+                            <button class="btn btn-dark font-increase-button" id="font-increase-button" aria-labelledby="increase-font-tooltip">A+</button>
+                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button" aria-labelledby="increase-font-tooltip">A-</button>
                         </div>
-                    </div>
+
+                        <div id="increase-font-tooltip" class="sr-only">Increase or decrease font size</div>
+                    </div>s
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-dark nav">
+    <div class="container-fluid bg-dark nav" role="navigation">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
@@ -51,52 +53,52 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu" role="menu">
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences" role="menuitem">Applied sciences</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning" role="menuitem">Architecture &amp; planning</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment" role="menuitem">Construction &amp; environment</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Engineering" role="menuitem">Engineering</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences" role="menuitem">Health &amp; social sciences</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu" role="menu">
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Bachelor" role="menuitem">Bachelor</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Master" role="menuitem">Master</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education" role="menuitem">Continuing education</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Doctorate" role="menuitem">Doctorate</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
-                            <div class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry" role="menuitem">Industry &amp; partners</a>
+                            <div class="dropdown-menu" role="menu">
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Public+relations" role="menuitem">Public relations</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Commercialization" role="menuitem">Commercialization</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners" role="menuitem">Sponsors &amp; partners</a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +121,7 @@
         </div>
     </div>
 
-    <div class="container main" id="main">
+    <div class="container main" id="main" role="main">
         <div class="row no-gutters">
             <div class="col-12 col-lg-6">
                 <div class="p-4 mt-4 mr-lg-3 bg-white news">
@@ -219,7 +221,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-dark mt-4 footer">
+    <div class="container-fluid bg-dark mt-4 footer" role="contentinfo">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
                 <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
@@ -235,7 +237,7 @@
     <script type="text/javascript" src="./js/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

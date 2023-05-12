@@ -47,4 +47,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.navbar-toggler')
         .addEventListener('click', toggleNavigation, false);
+        const getFontSize = () => {
+        const root = document.getElementById('root');
+        return parseFloat(window.getComputedStyle(root, null).getPropertyValue('font-size'));
+      }
+
+      const setFontSize = (fontSize) => {
+        const root = document.getElementById('root');
+        root.style.fontSize = `${fontSize}px`;
+      }
+
+      // Font increase / decrease buttons
+      document.querySelector('#font-increase-button')
+        .addEventListener('click', () => {
+          const fontSize = getFontSize();
+          setFontSize(fontSize + 1);
+        }, false);
+
+      document.querySelector('#font-decrease-button')
+        .addEventListener('click', () => {
+          const fontSize = getFontSize();
+          setFontSize(fontSize - 1);
+        }, false);
+
 }, false);
