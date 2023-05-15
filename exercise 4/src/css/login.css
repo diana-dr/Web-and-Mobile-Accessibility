@@ -7,3 +7,7 @@
   /* adjust color of labels for the inputs in the registration form */
   color: black;
 }
+
+.invalid-feedback {
+  margin-top: 1rem;
+}

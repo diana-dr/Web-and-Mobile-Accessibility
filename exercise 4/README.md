@@ -24,8 +24,19 @@ Wen addition, one of the inputs has a label but does not have the "for" attribut
 
 ### Related control grouping
 
-We can improve them using `<fieldset>` instead of `<div>` for better screen reader accessibility.
+**What We did**:
+We can improve them using `<fieldset>` instead of `<div>` for better screen reader accessibility. 
+We also added a `<legend>` tag to provide more information about the form.
 
+
+### Form input validation
+
+Originally, we only can saw errors indicating there are errors in the form when we submit an empty form using login button. But we did not what are the errors.
+The messages are insufficient to notify the user about the errors.
+
+**What We did**:
+- Add messages to every required field.
+- Adjust the top margin of the message, origianally it was a bit overlapped with the input.
 
 ### References
 [1] [Don’t Use The Placeholder Attribute — Smashing Magazine](https://www.smashingmagazine.com/2018/06/placeholder-attribute/)
