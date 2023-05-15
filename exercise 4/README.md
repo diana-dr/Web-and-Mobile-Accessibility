@@ -19,8 +19,14 @@ Wen addition, one of the inputs has a label but does not have the "for" attribut
   - Reason 3: The placeholder attribute is not a nice place for the input format instruction, especially for people who have bad short-term memory (Ref [1]). 
 
 
+#TODO someone fix the body color?
+#TODO should the "optional" for the basic information be fixed?
+
+### Related control grouping
+
+We can improve them using `<fieldset>` instead of `<div>` for better screen reader accessibility.
+
+
 ### References
 [1] [Don’t Use The Placeholder Attribute — Smashing Magazine](https://www.smashingmagazine.com/2018/06/placeholder-attribute/)
 
-#TODO someone fix the body color?
-#TODO should the "optional" for the basic information be fixed?

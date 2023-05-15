@@ -124,9 +124,10 @@
 
   <div class="container main" id="main">
     <div class="row no-gutters">
-      <div class="col-12 col-md-5 mt-4 login">
+      <!-- for better acccessibility: change div to fieldset and add legend also delete original title-->
+      <fieldset class="col-12 col-md-5 mt-4 login">
+        <legend class="text-primary title">Login</legend>
         <div class="p-4 mr-md-3 bg-white">
-          <div class="text-primary mb-4 title">Login</div>
           <div class="text-danger mb-4 d-none subtitle" id="login-error">Please correct the error(s)</div>
           <ul class="sr-only" id="login-error-list"></ul>
           <form id="login-form" novalidate>
@@ -156,11 +157,12 @@
               password</button>
           </form>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="col-12 col-md-7 mt-4 register">
+      <!-- for better acccessibility: change div to fieldset and add legend also delete original title-->
+      <fieldset class="col-12 col-md-7 mt-4 register">
+        <legend class="text-primary title">Create new account</legend>
         <div class="p-4 bg-white">
-          <div class="text-primary mb-4 title">Create new account</div>
           <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
           <ul class="sr-only" id="register-error-list"></ul>
           <form id="register-form" novalidate>
@@ -230,7 +232,7 @@
             <button class="btn btn-primary" id="register-register-button">Register</button>
           </form>
         </div>
-      </div>
+      </fieldset>
     </div>
   </div>
 
