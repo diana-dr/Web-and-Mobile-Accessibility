@@ -10,10 +10,12 @@ html {
 body a,
 body div,
 body p {
+    /*UPDATE - changed color*/
     color: #000000;
 }
 
 body a:hover {
+    /*UPDATE - changed color*/
     color: #e31c3d;
 }
 

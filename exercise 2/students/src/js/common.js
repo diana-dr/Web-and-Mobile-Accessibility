@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return parseFloat(window.getComputedStyle(root, null).getPropertyValue('font-size'));
       }
 
+      // UPDATE - Added functionality below for increasing/decreasing font size
       const setFontSize = (fontSize) => {
         const root = document.getElementById('root');
         root.style.fontSize = `${fontSize}px`;
@@ -69,5 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
           const fontSize = getFontSize();
           setFontSize(fontSize - 1);
         }, false);
+      // END UPDATE
 
 }, false);

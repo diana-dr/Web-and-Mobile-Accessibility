@@ -12,6 +12,7 @@
 </head>
 
 <body class="bg-light">
+<!--UPDATE - Added role='header' for the header div below-->
     <div class="container-fluid d-none d-lg-block my-4 header" role="header">
         <div class="container">
             <div class="row no-gutters">
@@ -26,16 +27,22 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
+<!--                         UPDATE - Included aria-labelledby="increase-font-tooltip" for A+
+                             and aria-labelledby="decrease-font-tooltip" for A- -->
                             <button class="btn btn-dark font-increase-button" id="font-increase-button" aria-labelledby="increase-font-tooltip">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button" aria-labelledby="increase-font-tooltip">A-</button>
+                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button" aria-labelledby="decrease-font-tooltip">A-</button>
+<!--                        END UPDATE-->
                         </div>
-                        <div id="increase-font-tooltip" class="sr-only">Increase or decrease font size</div>
+<!--                        UPDATE - added 2 new divs for increase/decrease -->
+                        <div id="increase-font-tooltip" class="sr-only">Increase font size</div>
+                        <div id="decrease-font-tooltip" class="sr-only">Decrease font size</div>
+<!--                        END UPDATE-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!--UPDATE - Added role='navigation' for the navigation div below-->
     <div class="container-fluid bg-dark nav" role="navigation">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
@@ -51,52 +58,67 @@
                             <a class="nav-link" href="./">Homepage</a>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>"
+                            <!--UPDATE - Added role='menu' for the dropdown menu div below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Applied+sciences" role="menuitem">Applied sciences</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning" role="menuitem">Architecture &amp; planning</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment" role="menuitem">Construction &amp; environment</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Engineering" role="menuitem">Engineering</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences" role="menuitem">Health &amp; social sciences</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                            <!--UPDATE - Added role='menu' for the dropdown menu div below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Bachelor" role="menuitem">Bachelor</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Master" role="menuitem">Master</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Continuing+education" role="menuitem">Continuing education</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Doctorate" role="menuitem">Doctorate</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
+                            <!--UPDATE - Added role='menu' for the dropdown menu div below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Public+relations" role="menuitem">Public relations</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Commercialization" role="menuitem">Commercialization</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item container-->
                                     <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners" role="menuitem">Sponsors &amp; partners</a>
                                 </div>
                             </div>
@@ -119,28 +141,32 @@
             </div>
         </div>
     </div>
-
+    <!--UPDATE - Added role='main' for the main container below-->
     <div class="container main" id="main" role="main">
         <div class="row no-gutters">
             <div class="col-12 col-md-5 mt-4 login">
                 <div class="p-4 mr-md-3 bg-white">
                     <div class="text-primary mb-4 title">Login</div>
+<!--                    UPDATE - added aria-live="assertive" in div below-->
                     <div class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
                         <div class="form-group">
                             <input class="form-control" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">
+                            <!--UPDATE - changed from p div to label for="login-email-control"-->
                             <label for="login-email-control" style="position: relative; top: -60px;">Email</label>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
                             <input class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
+                            <!--UPDATE - changed from p div to label for="login-password-control"-->
                             <label for="login-password-control" style="position: relative; top: -60px;">Password</label>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="remember" id="login-remmeber-control" aria-checked="false">
+                                <!--UPDATE - changed from p div to label for="login-remmeber-control"-->
                                 <label for="login-remmeber-control" class="form-check-label">Keep me logged in</label>
                             </div>
                         </div>
@@ -153,6 +179,7 @@
             <div class="col-12 col-md-7 mt-4 register">
                 <div class="p-4 bg-white">
                     <div class="text-primary mb-4 title">Create new account</div>
+                    <!--                    UPDATE - added aria-live="assertive" in div below-->
                     <div class="text-danger mb-4 d-none subtitle" id="register-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul class="sr-only" id="register-error-list"></ul>
                     <form id="register-form" novalidate>
@@ -162,29 +189,39 @@
                             </p>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
+                                    <!--UPDATE - changed from p div to label for="register-first-name-control"-->
                                     <label for="register-first-name-control">First name</label>
+                                    <!--                    UPDATE - added aria-live="assertive" in div below-->
                                     <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required aria-live="assertive">
                                     <small class="invalid-feedback"></small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
+                                    <!--UPDATE - changed from p div to label for="register-last-name-control"-->
                                     <label for="register-last-name-control">Last name</label>
+                                    <!--                    UPDATE - added aria-live="assertive" in div below-->
                                     <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required aria-live="assertive">
                                     <small class="invalid-feedback"></small>
                                 </div>
                             </div>
                             <div class="form-group">
+                                <!--UPDATE - changed from p div to label for="register-email-control"-->
                                 <label for="register-email-control">Email</label>
+                                <!--                    UPDATE - added aria-live="assertive" in div below-->
                                 <input class="form-control" id="register-email-control" type="email" placeholder="Email" required aria-live="assertive">
                                 <small class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
+                                <!--UPDATE - changed from p div to label for="register-password-control"-->
                                 <label for="register-password-control">Password</label>
+                                <!--                    UPDATE - added aria-live="assertive" in div below-->
                                 <input class="form-control" id="register-password-control" type="password" placeholder="Password" required aria-live="assertive">
                                 <small class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
                             <div class="form-group">
+                                <!--UPDATE - changed from p div to label for="register-programme-control"-->
                                 <label for="register-programme-control">Programme</label>
+                                <!--                    UPDATE - added aria-live="assertive" in div below-->
                                 <select class="form-control" id="register-programme-control" required aria-live="assertive">
                                     <option value="">Please select your education or research programme</option>
                                     <option value="bachelor">Bachelor</option>
@@ -200,19 +237,23 @@
                                 <small class="text-secondary">(optional)</small>
                             </p>
                             <div class="form-group">
+                                <!--UPDATE - changed from p div to label for="register-street-control"-->
                                 <label for="register-street-control">Street</label>
                                 <input class="form-control" id="register-street-control" type="text" placeholder="Street">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-5">
+                                    <!--UPDATE - changed from p div to label for="register-city-control"-->
                                     <label for="register-city-control">City</label>
                                     <input class="form-control" id="register-city-control" type="text" placeholder="City">
                                 </div>
                                 <div class="form-group col-12 col-lg-4">
+                                    <!--UPDATE - changed from p div to label for="register-state-control"-->
                                     <label for="register-state-control">State</label>
                                     <input class="form-control" id="register-state-control" type="text" placeholder="State">
                                 </div>
                                 <div class="form-group col-12 col-lg-3">
+                                    <!--UPDATE - changed from p div to label for="register-zip-control"-->
                                     <label for="register-zip-control">Zip</label>
                                     <input class="form-control" id="register-zip-control" type="text" placeholder="Zip">
                                 </div>
@@ -224,7 +265,7 @@
             </div>
         </div>
     </div>
-
+    <!--UPDATE - Added role='contentinfo' for the content info div below-->
     <div class="container-fluid bg-dark mt-4 footer" role="contentinfo">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
