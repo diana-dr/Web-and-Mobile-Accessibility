@@ -1,0 +1,9 @@
+#login-form label {
+  /* adjust color of labels for the inputs in the login form */
+  color: black;
+}
+
+#register-form label {
+  /* adjust color of labels for the inputs in the registration form */
+  color: black;
+}
