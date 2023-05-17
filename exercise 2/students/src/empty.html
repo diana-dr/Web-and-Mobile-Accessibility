@@ -12,6 +12,7 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
+<!--UPDATE - Added role='header' for the header container-->
     <div class="container-fluid d-none d-lg-block my-4 header" role="header">
         <div class="container">
             <div class="row no-gutters">
@@ -26,17 +27,22 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
+<!--                         UPDATE - Included aria-labelledby="increase-font-tooltip" for A+
+                             and aria-labelledby="decrease-font-tooltip" for A- -->
                             <button class="btn btn-dark font-increase-button" id="font-increase-button" aria-labelledby="increase-font-tooltip">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button" aria-labelledby="increase-font-tooltip">A-</button>
+                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button" aria-labelledby="decrease-font-tooltip">A-</button>
+<!--                        END UPDATE-->
                         </div>
-
-                        <div id="increase-font-tooltip" class="sr-only">Increase or decrease font size</div>
+<!--                        UPDATE - added 2 new divs for increase/decrease -->
+                        <div id="increase-font-tooltip" class="sr-only">Increase font size</div>
+                        <div id="decrease-font-tooltip" class="sr-only">Decrease font size</div>
+<!--                        END UPDATE-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<!--UPDATE - Added role='navigation' for the navigation container-->
     <div class="container-fluid bg-dark nav" role="navigation">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
@@ -53,51 +59,66 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
+                            <!--UPDATE - Added role='menu' for the dropdown-menu below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Applied+sciences" role="menuitem">Applied sciences</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning" role="menuitem">Architecture &amp; planning</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment" role="menuitem">Construction &amp; environment</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Engineering" role="menuitem">Engineering</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences" role="menuitem">Health &amp; social sciences</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                            <!--UPDATE - Added role='menu' for the dropdown-menu below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Bachelor" role="menuitem">Bachelor</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Master" role="menuitem">Master</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Continuing+education" role="menuitem">Continuing education</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Doctorate" role="menuitem">Doctorate</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
+                            <!--UPDATE - Added role='menu' for the dropdown-menu below-->
                             <div class="dropdown-menu" role="menu">
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Public+relations" role="menuitem">Public relations</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Commercialization" role="menuitem">Commercialization</a>
                                 </div>
                                 <div>
+                                    <!--UPDATE - Added role='menuitem' for the dropdown-item below-->
                                     <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners" role="menuitem">Sponsors &amp; partners</a>
                                 </div>
                             </div>
@@ -120,13 +141,13 @@
             </div>
         </div>
     </div>
-
+<!--UPDATE - Added role='main' for the main container-->
     <div class="container mt-4 text-center main" id="main" role="main">
         <h6 class="text-primary py-4 mb-4 title" id="title-placeholder">Loading...</h6>
         <p class="text-secondary" id="text-placeholder"></p>
     </div>
 
-
+<!--UPDATE - Added role='contentinfo' for the content info container-->
     <div class="container-fluid bg-dark mt-4 footer" role="contentinfo">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
