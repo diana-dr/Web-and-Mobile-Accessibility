@@ -1,0 +1,12 @@
+.news .media {
+    border-bottom: 1px solid #000000
+}
+
+.news .media img {
+    width: 5rem
+}
+
+.researches li,
+.studies li {
+    margin-top: 1.2rem
+}
