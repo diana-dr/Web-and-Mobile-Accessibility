@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lorem Ipsum Institute of Technolgoy</title>
+    <title>Lorem Ipsum Institute of Technolgy</title>
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/login.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-8 media">
-                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Logo">
+                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Logo of Lorem Ipsum Institute of Technology">
                     <div class="media-body align-self-center">
                         <div class="mb-0 title">Lorem Ipsum
                             <br>Institute of Technology
@@ -47,7 +47,7 @@
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
-                    <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Logo">
+                    <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Logo of Lorem Ipsum Institute of Technology">
                 </div>
                 <button class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
@@ -143,11 +143,12 @@
     </div>
     <!--UPDATE - Added role='main' for the main container below-->
     <div class="container main" id="main" role="main">
-        <div class="row no-gutters">
-            <!-- for better acccessibility: change div to fieldset and add legend also delete original title-->
-            <fieldset class="col-12 col-md-5 mt-4 login">
+         <div class="row no-gutters">
+        <!-- for better acccessibility: change div to fieldset and add legend also delete original title-->
+            <div class="col-12 col-md-10 mt-4 login">
                 <div class="p-4 mr-md-3 bg-white">
-                    <div class="text-primary mb-4 title">Login</div>
+                    <fieldset class="login">
+                        <legend class="text-primary mb-4 title">Login</legend>
 <!--                    UPDATE - added aria-live="assertive" in div below-->
                     <div class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul class="sr-only" id="login-error-list"></ul>
@@ -174,13 +175,16 @@
                         <button class="btn btn-primary" id="login-login-button" type="submit">Login</button>
                         <button class="btn btn-link text-danger ml-3" id="login-forgot-button" type="button">Forgot password</button>
                     </form>
-                </div>
-            </fieldset>
+                    </fieldset>
+            </div>
+            </div>
+
 
             <!-- for better acccessibility: change div to fieldset and add legend also delete original title-->
-            <fieldset class="col-12 col-md-7 mt-4 register">
+            <div class="col-12 col-md-10 mt-4 register">
                 <div class="p-4 bg-white">
-                    <div class="text-primary mb-4 title">Create new account</div>
+                    <fieldset class="register">
+                    <legend class="text-primary mb-4 title">Create new account</legend>
                     <!--                    UPDATE - added aria-live="assertive" in div below-->
                     <div class="text-danger mb-4 d-none subtitle" id="register-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul class="sr-only" id="register-error-list"></ul>
@@ -263,8 +267,9 @@
                         </div>
                         <button class="btn btn-primary" id="register-register-button">Register</button>
                     </form>
+                    </fieldset>
                 </div>
-            </fieldset>
+            </div>
         </div>
     </div>
     <!--UPDATE - Added role='contentinfo' for the content info div below-->
