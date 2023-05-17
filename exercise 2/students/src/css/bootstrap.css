@@ -3089,7 +3089,7 @@ tbody.collapse.show {
 .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa
+    background-color: #dca6f5
 }
 
 .dropdown-item.active,
@@ -4069,7 +4069,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
     /*UPDATE - changed color*/
-    color: #ff0000
+    color: #980000
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
